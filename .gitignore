@@ -1,3 +1,4 @@
 .localenv/
 data/
 log/
+**/__pycache__/**

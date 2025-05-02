@@ -138,6 +138,7 @@ html, body {
 
 .DateInput_input::placeholder {
     color: var(--primary);
+    font-size: 18px;
 }
 
 .DateInput_input__focused {
