@@ -9,8 +9,13 @@ def kpi (interactions, transactions):
                                                                 left_on="customer_id",
                                                                 right_on="customer_id").rename(columns={"session_id": "sessions"})
 
-    revenue_per_session_per_user = ((transactions_per_session_per_user["amount"].sum() / 
-                                    transactions_per_session_per_user["sessions"].sum()) / 
-                                    transactions_per_session_per_user["customer_id"].count())
+    amount = transactions_per_session_per_user["amount"].sum()
+    sessions = transactions_per_session_per_user["sessions"].sum()
+    customers = transactions_per_session_per_user["customer_id"].count()
+    
+    sessions = sessions if sessions > 0 else 1
+    customers = customers if customers > 0 else 1
+
+    revenue_per_session_per_user = (( amount / sessions) / customers)
 
     return round(revenue_per_session_per_user, 2)
