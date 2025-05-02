@@ -1,5 +1,3 @@
-fig_width = 1080
-fig_height = 720
 label_font_size = 20
 tick_size = 15
 line_width = 2
@@ -34,18 +32,14 @@ scatter_style = {
 layout_style = {
     "plot_bgcolor": background,
     "paper_bgcolor": background,
-    "width": fig_width,
-    "height": fig_height,
     "font": {
         "size": label_font_size,
-        "color": secondary,
-        "family": "Arial",
+        "color": secondary
     },
     "title": {
         "font": {
             "size": label_font_size,
-            "color": secondary,
-            "family": "Arial"
+            "color": secondary
         },
         "x": 0.5,
         "xanchor": "center", 
@@ -85,7 +79,9 @@ layout_style = {
         "zeroline": False,
         "linecolor": secondary,
         "linewidth": line_width,
-    }
+    },
+    "autosize": True,
+    "height": None
 }
 
 sunburst_style = {
