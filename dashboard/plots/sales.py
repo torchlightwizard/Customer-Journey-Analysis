@@ -1,6 +1,6 @@
 def fig (interactions, transactions):
     import plotly.express as px
-    from dashboard.styles.constants import scatter_style, layout_style
+    from dashboard.styles.figs import scatter_style, layout_style
 
     sessions_per_user = interactions.groupby(["customer_id"])["session_id"].nunique().reset_index()
 

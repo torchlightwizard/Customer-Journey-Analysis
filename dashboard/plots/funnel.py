@@ -78,9 +78,9 @@ def get_sankey (df, criteria):
 
 def plot_sankey (df, criteria, criteria_colors, title="Customer Journey"):
     import plotly.graph_objects as go
-    from dashboard.styles.constants import color5, layout_style
+    from dashboard.styles.figs import color5, layout_style
 
-    layout_style["font"]["size"] = 12
+    layout_style["font"]["size"] = 18
     
     source, target, value = get_sankey(df, criteria)
 

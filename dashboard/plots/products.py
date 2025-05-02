@@ -1,4 +1,4 @@
-def hex_to_rgba(hex_color, alpha=0.8):
+def hex_to_rgba(hex_color, alpha=1):
     hex_color = hex_color.lstrip("#")
     r, g, b = [int(hex_color[i:i+2], 16) for i in (0, 2, 4)]
     return f"rgba({r}, {g}, {b}, {alpha})"
@@ -7,8 +7,8 @@ def hex_to_rgba(hex_color, alpha=0.8):
 
 def fig (transactions):
     import plotly.express as px
-    from dashboard.styles.constants import primary, color2, color3, secondary, color5, color6, color8, color7, color9, color10
-    from dashboard.styles.constants import bar_style, layout_style
+    from dashboard.styles.figs import primary, color2, color3, secondary, color5, color6, color8, color7, color9, color10
+    from dashboard.styles.figs import bar_style, layout_style
 
     top_10_colors = [
         primary,
