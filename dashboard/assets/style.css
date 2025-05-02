@@ -1,0 +1,180 @@
+:root {
+    --primary: #F5C45E; /* yellow */
+    --secondary: #E78B48; /* orange */
+    --background: #102E50; /* dark blue */
+    
+    --color1: #03B5AA; /* green */
+    --color2: #F0386B; /* red */
+    --color3: #EDC9FF; /* purple */
+    --color4: #00CFC1; /* green 2 */
+    --color5: #F7F7FF; /* white */
+    --color6: #F88DAD; /* pink */
+    --color7: #40F99B; /* electric green */
+    --color8: #C20114; /* very red */
+    --color9: #51CB20; /* very green */
+    --color10: #07A0C3; /* blue   */
+}
+
+html, body {
+    background-color: var(--background) !important;
+    height: 100%;
+    margin: 0 10 0 10;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Drop Down DCC */
+
+.Select-placeholder {
+    color: var(--primary);
+}
+
+.Select-control {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 0;
+    color: var(--primary);
+}
+
+.is-open>.Select-control {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 0;
+    color: var(--primary);
+}
+
+.Select--multi .Select-value {
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    border-radius: 0;
+}
+
+.Select-menu-outer {
+    border: 0;
+    border-radius: 0;
+}
+
+.Select-option {
+    color: blue;
+}
+
+.Select-clear-zone {
+    color: var(--background);
+}
+
+.Select-clear-zone:hover {
+    color: var(--color2);
+}
+
+.Select-arrow {
+    border-top-color: var(--background);
+}
+
+.Select-control:hover .Select-arrow {
+    border-top-color: var(--primary);
+}
+
+.is-open>.Select-control .Select-arrow {
+    border-color: transparent transparent var(--primary);
+}
+
+.Select-menu {
+    background-color: var(--primary);
+    color: var(--color2);
+}
+
+.Select-menu.is-focused {
+    background-color: var(--color2);
+    color: var(--primary);
+}
+
+/* .VirtualizedSelectOption {
+
+}
+
+.VirtualizedSelectFocusedOption {
+
+} */
+
+/* Age DCC */
+
+.rc-slider-handle {
+    border-color: var(--secondary);
+    background-color: var(--secondary);
+}
+
+.rc-slider-dot {
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.rc-slider-dot-active {
+    border-color: var(--secondary);
+    background-color: var(--secondary);
+}
+
+.rc-slider-mark-text {
+    color: var(--primary);
+}
+
+.rc-slider-mark-text-active {
+    color: var(--secondary);
+}
+
+/* Date DCC */
+
+.DateRangePickerInput {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 0;
+    color: var(--primary);
+}
+
+.DateInput_input {
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
+.DateInput_input::placeholder {
+    color: var(--primary);
+}
+
+.DateInput_input__focused {
+    background-color: var(--secondary);
+}
+
+.DateRangePickerInput_arrow_svg {
+    fill: var(--background);
+}
+
+
+.CalendarMonthGrid, .CalendarMonth, .DateRangePicker_picker, .DayPicker {
+    background-color: var(--primary);
+}
+
+.DayPickerNavigation_button, .CalendarDay {
+    background-color: var(--secondary);
+    border-color: var(--background);
+    color: var(--background);
+}
+
+.DayPickerNavigation_button:hover, .CalendarDay:hover {
+    background-color: var(--primary);
+    color: var(--color2);
+    border: none;
+}
+
+.DayPickerNavigation_svg__horizontal {
+    fill: var(--background);
+}
+
+.CalendarMonth_caption {
+    color: var(--background);
+}
+
+.DateRangePicker_picker {
+    position: absolute !important;
+    top: -300px !important;
+    z-index: 9999 !important;
+}
