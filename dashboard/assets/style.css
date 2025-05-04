@@ -1,7 +1,7 @@
 :root {
     --primary: #F5C45E; /* yellow */
     --secondary: #E78B48; /* orange */
-    --background: #102E50; /* dark blue */
+    --background: #11121b; /* dark blue */
     
     --color1: #03B5AA; /* green */
     --color2: #F0386B; /* red */
@@ -32,14 +32,14 @@ html, body {
 .Select-control {
     background-color: var(--secondary);
     border: none;
-    border-radius: 0;
+    border-radius: 20px;
     color: var(--primary);
 }
 
 .is-open>.Select-control {
     background-color: var(--secondary);
     border: none;
-    border-radius: 0;
+    border-radius: 20px;
     color: var(--primary);
 }
 
@@ -47,12 +47,12 @@ html, body {
     background-color: var(--primary);
     color: var(--background);
     border: none;
-    border-radius: 0;
+    border-radius: 20px;
 }
 
 .Select-menu-outer {
     border: 0;
-    border-radius: 0;
+    border-radius: 20px;
 }
 
 .Select-option {
@@ -127,7 +127,8 @@ html, body {
 .DateRangePickerInput {
     background-color: var(--secondary);
     border: none;
-    border-radius: 0;
+    border-radius: 20px;
+    overflow: hidden;
     color: var(--primary);
 }
 

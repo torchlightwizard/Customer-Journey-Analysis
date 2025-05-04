@@ -1,37 +1,13 @@
+from dashboard.styles.colors import *
+from dashboard.styles.helpers import hex_to_rgba
+
 label_font_size = 20
 tick_size = 15
-line_width = 2
-
-primary = "#F5C45E" # yellow
-secondary = "#E78B48" # orange
-background = "#102E50" # dark blue
-
-color1 = "#03B5AA" # green
-color2 = "#F0386B" # red
-color3 = "#EDC9FF" # purple
-color4 = "#00CFC1" # green 2
-color5 = "#F7F7FF" # white
-color6 = "#F88DAD" # pink
-color7 = "#40F99B" # electric green
-color8 = "#C20114" # very red
-color9 = "#51CB20" # very green
-color10 = "#07A0C3" # blue
-
-scatter_style = {
-    "marker": {
-        "color": primary,
-        "line": {
-            "color": secondary,
-            "width": line_width
-        },
-        "size": 15,
-        "opacity": 0.8
-    }
-}
+line_width = 0.2
 
 layout_style = {
-    "plot_bgcolor": background,
-    "paper_bgcolor": background,
+    "plot_bgcolor": hex_to_rgba(background, 0),
+    "paper_bgcolor": hex_to_rgba(background, 0.5),
     "font": {
         "size": label_font_size,
         "color": secondary
@@ -55,11 +31,11 @@ layout_style = {
             "size": tick_size,
             "color": secondary
         },
-        "gridcolor": secondary,
+        "gridcolor": hex_to_rgba(secondary, 0.5),
         "gridwidth": line_width,
         "showgrid": True,
         "zeroline": False,
-        "linecolor": secondary,
+        "linecolor": hex_to_rgba(secondary, 0.5),
         "linewidth": line_width,
     },
     "yaxis": {
@@ -73,15 +49,27 @@ layout_style = {
             "size": tick_size,
             "color": secondary
         },
-        "gridcolor": secondary,
+        "gridcolor": hex_to_rgba(secondary, 0.5),
         "gridwidth": line_width,
         "showgrid": True,
         "zeroline": False,
-        "linecolor": secondary,
+        "linecolor": hex_to_rgba(secondary, 0.5),
         "linewidth": line_width,
     },
     "autosize": True,
     "height": None
+}
+
+scatter_style = {
+    "marker": {
+        "color": primary,
+        "line": {
+            "color": secondary,
+            "width": line_width
+        },
+        "size": 15,
+        "opacity": 0.8
+    }
 }
 
 sunburst_style = {
@@ -107,8 +95,9 @@ bar_style = {
     "marker": {
         "line": {
             "color": secondary, 
-            "width": 3
+            "width": 0
         },
+        "color": primary,
         "opacity": 0.8
     }
 }
