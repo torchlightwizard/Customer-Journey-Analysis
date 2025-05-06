@@ -5,7 +5,7 @@
 # Notebook Charts
 ![Pareto Charts](public/Pareto%20Charts.png)
 
-# Tntro
+# Intro
 An analysis conducted on user session behaviour, transactions and demographics data. The data spans from 2020 to 2025.
 
 # Problem Statement
