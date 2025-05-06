@@ -1,5 +1,8 @@
+# Dashboard
 ![Sample Report Page](public/ScreenShot%201.PNG)
 ![Sample Report Page](public/ScreenShot%202.PNG)
+
+# Notebook Charts
 ![Pareto Charts](public/Pareto%20Charts.png)
 
 # Tntro
