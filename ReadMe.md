@@ -1,5 +1,6 @@
 ![Sample Report Page](public/ScreenShot%201.PNG)
 ![Sample Report Page](public/ScreenShot%202.PNG)
+![Pareto Charts](public/Pareto%20Charts.png)
 
 # Tntro
 An analysis conducted on user session behaviour, transactions and demographics data. The data spans from 2020 to 2025.
